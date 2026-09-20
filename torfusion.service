@@ -1,0 +1,16 @@
+[Unit]
+Description=TorFusion persistent Tor routing and IP rotation
+After=network-online.target tor@default.service
+Wants=network-online.target tor@default.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/torfusion --action daemon --config /etc/torfusion/config.json
+Restart=on-failure
+RestartSec=5
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
