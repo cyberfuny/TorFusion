@@ -2,6 +2,12 @@
 
 # TorFusion
 
+https://github.com/user-attachments/assets/f2a5f865-1aa1-4d3c-872c-e203788a4a2b
+
+
+
+
+
 TorFusion — Linux-застосунок на Go з TUI для керування Tor, прозорою
 маршрутизацією TCP/DNS-трафіку, ротацією IP та діагностикою мережі.
 
